@@ -8,7 +8,7 @@ export default function AboutUs() {
         <img src={banner.src} alt="banner" />
       </div>
       <div className={styles.content}>
-        <h1>About Us</h1>
+        <h1>À propos de nous</h1>
         <p>
           Nous sommes votre destination de choix pour des solutions de
           déstockage d'emballages et de produits alimentaires de haute qualité à
@@ -31,6 +31,12 @@ export default function AboutUs() {
           de votre expérience d'achat. Notre équipe dévouée est là pour vous
           guider et répondre à toutes vos questions, et notre processus de
           commande simple et efficace garantit une livraison rapide et fiable.
+          ======= It is a long established fact that a reader will be distracted
+          by the readable content of a page when looking at its layout. The
+          point of using Lorem Ipsum is that it has a more-or-less normal
+          distribution of letters, as opposed text, and a search for 'lorem
+          ipsum' will uncover many web sites still in their infancy. Various
+          versions have{" "}
         </p>
       </div>
     </div>
