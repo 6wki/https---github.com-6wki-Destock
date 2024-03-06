@@ -1,0 +1,144 @@
+.emptyState {
+  position: relative;
+  top: -20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+}
+
+.ionSadOutline {
+  margin: auto;
+  margin-bottom: 0px;
+  font-size: 90px;
+  color: #ccc;
+}
+
+.emptyState h3 {
+  margin: 8px 0px;
+  text-align: center;
+  font-weight: normal;
+}
+.emptyState p {
+  font-size: 14px;
+  margin: 0px;
+  color: #999;
+  text-align: center;
+}
+.emptyState button {
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 8px;
+  margin: 20px auto auto auto;
+  width: 50%;
+  max-width: 200px;
+  background: var(--green);
+  cursor: pointer;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.emptyState a {
+  text-decoration: none;
+  color: #000;
+}
+
+.emptyState img {
+  width: 25rem;
+  margin-bottom: 2rem;
+}
+
+.button {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  touch-action: manipulation;
+  text-decoration: none;
+  margin-top: 1.5rem;
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    hsl(120, 100%, 10%) 0%,
+    /* Dark Green */ hsl(120, 100%, 30%) 8%,
+    /* Mid Green */ hsl(120, 100%, 30%) 92%,
+    /* Mid Green */ hsl(120, 100%, 10%) 100% /* Dark Green */
+  );
+}
+
+.front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: rgb(62, 62, 62);
+  background: var(--green); /* Green */
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.button:hover {
+  filter: brightness(110%);
+}
+
+.button:hover .front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.button:active .front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button:hover .shadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.button:active .shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+@media (max-width: 1441px) {
+  .emptyState img {
+    width: 100%;
+  }
+}
